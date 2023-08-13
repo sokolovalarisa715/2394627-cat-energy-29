@@ -9,7 +9,19 @@
 .main-nav {
 }
 .burger-menu__toggle {
+
 }
+.main-nav__wrapper {}
+
+.main-nav {}
+
+.burger-menu__toggle {}
+
+.visually-hidden {}
+
+.main-nav__list {}
+
+.site-list__item {}
 .visually-hidden {
 }
 .main-container {
