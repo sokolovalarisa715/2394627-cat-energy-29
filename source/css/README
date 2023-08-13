@@ -1,16 +1,162 @@
-Папка для скомпилированных стилей. Файлы препроцессоров держите в другой папке. Например, для *.less используйте папку less, для *.scss используйте папку sass.
-
-Скомпилированные CSS-файлы не отправляйте в репозиторий. В репозитории должны быть только файлы препроцессора.
-
---
-
-Структура файлов:
-
-css/
-| - style.css
-less/
-| - style.less
-| - [другие *.less файлы]
-sass/
-| - style.scss
-| - [другие *.scss файлы]
+.page__body {
+}
+.main-header {
+}
+.main-header__logo {
+}
+.logo__image {
+}
+.main-nav {
+}
+.burger-menu__toggle {
+}
+.visually-hidden {
+}
+.main-container {
+}
+.first-screen {
+}
+.first-screen__wrapper {
+}
+.container {
+}
+.first-screen__title {
+}
+.first-screen__text {
+}
+.first-screen__photo {
+}
+.first-screen__button {
+}
+.button {
+}
+.programs {
+}
+.programs__list {
+}
+.list {
+}
+.programs__item {
+}
+.program {
+}
+.programs__title-wrapper {
+}
+.program__icon {
+}
+.program__icon--slim {
+}
+.program__title {
+}
+.program__title--slim {
+}
+.title {
+}
+.program__text {
+}
+.text {
+}
+.program__button {
+}
+.program__button-text {
+}
+.program__button-icon {
+}
+.special {
+}
+.special__title {
+}
+.title--h2 {
+}
+.special__list {
+}
+.special__item {
+}
+.special__item--icon-leaf {
+}
+.special__text {
+}
+.special__item--icon-water {
+}
+.special__item--icon-food {
+}
+.special__item--icon-time {
+}
+.example {
+}
+.example__wrapper {
+}
+.example__text-wrapper {
+}
+.example__title {
+}
+.example__text {
+}
+.example__numbers {
+}
+.nambers {
+}
+.numbers__list {
+}
+.numbers__item {
+}
+.numbers__number {
+}
+.numbers__text {
+}
+.example__summery {
+}
+.example__slider {
+}
+.slider {
+}
+.slider__wrapper {
+}
+.slider__image {
+}
+.slider__image--before {
+}
+.slider__rulling {
+}
+.slider__thumb {
+}
+.page-footer {
+}
+.page-footer__contacts {
+}
+.contacts {
+}
+.contacts__collaboration-wrapper {
+}
+.contacts__title {
+}
+.contacts__text {
+}
+.contacts__map {
+}
+.page-footer__links {
+}
+.page-footer__logo {
+}
+.page-footer__logo-image {
+}
+.page-footer__social {
+}
+.social {
+}
+.social__item {
+}
+.social__link {
+}
+.social__link--vk {
+}
+.social__icon {
+}
+.page-footer__academy {
+}
+.academy {
+}
+.academy__text {
+}
+.academy__logo {
+}
