@@ -1,0 +1,77 @@
+@use "variables" as *;
+
+.footer__wrapper {
+  display: grid;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__logo-text {
+  padding: 0 0 10px;
+  text-align: center;
+  border-bottom: 1px solid $grey-light;
+}
+
+
+.page-footer {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: $secondary-bg-color;
+}
+
+.page-footer__contacts {}
+
+.contacts {}
+
+.contacts__wrapper {}
+
+.contacts__title {}
+
+.title {}
+
+.contacts__text {}
+
+.text {}
+
+.contacts__map {}
+
+.page-footer__links {}
+
+.page-footer__logo {}
+
+.page-footer__logo-image {}
+
+.page-footer__social{
+    border-bottom: 1px solid $grey-light;
+}
+
+.social {}
+
+.list {}
+
+.social__item {}
+
+.social__link {
+      &[href]:hover {
+        opacity: 0.8;
+      }
+
+      &[href]:active {
+        opacity: 0.6;
+      }
+
+}
+
+.social__link--vk {}
+
+.social__icon {}
+
+.page-footer__academy {}
+
+.academy {}
+
+.academy__text {}
+
+.academy__logo {}
