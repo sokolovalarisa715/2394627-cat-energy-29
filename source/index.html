@@ -4,19 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="main-header">
     <a href="/" class="main-header__logo">
       <div class="logo__image">
-        <svg>
-          <use href="img/logo-mobile.png"></use>
-        </svg>
-        <svg>
-          <use href="img/logo_2.png"></use>
-        </svg>
+            <a class="header__logo">
+              <img src="img/logo-mobile.png" width="33" height="38" alt="Кэт энерджи">
+            </a>
+            </div>
+            <div class="header__item">
+              <a class="header__logo-text">
+                <img src="img/logo-2.png" width="101" height="18" alt="Кэт энерджи">
+              </a>
       </div>
     </a>
     <div class="main-nav__wrapper">
@@ -49,9 +52,7 @@
         <h1 class="first-screen__title">Функциональное питание для котов</h1>
         <p class="first-screen__text">Занялся собой? Займись котом!</p>
         <div class="first-screen__photo">
-          <picture>
-            <source type="image/webp" srcset="img/index-can-mobile 1.png">
-          </picture>
+          <img src="img/index-can-mobile-1.png" alt="Банка корма">
         </div>
         <a class="first-screen__button button" href="#">Подобрать программу</a>
       </div>
@@ -61,29 +62,25 @@
         <ul class="programs__list list">
           <li class="programs__item program">
             <div class="programs__title-wrapper">
-              <svg class="program__icon program__icon--slim"><img src="img/cat_slim.png" alt="Худой кот"></svg>
+              <img src="img/cat_slim.png" class="program__icon program__icon--slim" alt="Худой кот">
               <p class="program__title program__title--slim title">Похудение</p>
             </div>
             <p class="program__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
             <a class="program__button button" href="#"><span class="program__button-text">Каталог slim</span>
-              <svg class="program__button-icon">
-                <use href="img/icon_arrow.svg"></use>
-              </svg></a>
+              <img class="program__button-icon" src="img/icon_arrow.svg" alt="Кнопка программ"></a>
           </li>
           <li class="programs__item program">
             <div class="programs__title-wrapper">
-              <svg class="program__icon program__icon--slim"><img src="img/cat_pro.png" alt="Толстый кот"></svg>
+              <img src="img/cat_pro.png" class="program__icon program__icon--slim" alt="Толстый кот">
               <p class="program__title program__title--slim title">Набор массы</p>
             </div>
             <p class="program__text text">Заработать авторитет среди дворовых котов и
               даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
               мышцы!</p>
-            <a class="program__button button" href="#"><span class="program__button-text">Каталог pro</span><svg
-                class="program__button-icon">
-                <use href="img/icon_arrow.svg"></use>
-              </svg></a>
+            <a class="program__button button" href="#"><span class="program__button-text">Каталог pro</span>
+              <img class="program__button-icon" src="img/icon_arrow.svg" alt="Кнопка Каталог"></a>
           </li>
         </ul>
       </div>
@@ -138,28 +135,20 @@
         <div class="example__slider slider">
           <div class="slider__wrapper">
             <!--<Тут будет много кода для слайдера>-->
-            <picture>
-              <source class="slider__image slider__image--before">
-              <img src="" alt="">
-            </picture>
-            <picture>
-              <source class="slider__image slider__image--before">
-              <img src="" alt="">
-            </picture>
+              <img class="slider__image slider__image--before" src="" alt="">
+              <img class="slider__image slider__image--before" src="" alt="">
           </div>
           <div class="slider__rulling">
-            <svg type="image/webp" class="slider__thumb">
-              <use href="img/thumb.svg"></use>
-            </svg>
+              <img class="slider__thumb" src="img/thumb.svg" alt="Переключатель слайдера">
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="page-footer">
+    <div class="page-footer footer__wrapper">
       <div class="page-footer__contacts contacts">
-        <div class="contacts__collaboration-wrapper">
+        <div class="contacts__wrapper">
           <p class="contacts__title title">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__text text">
             <span>ул. Большая</span>
@@ -173,34 +162,23 @@
       </div>
       <div class="page-footer__links">
         <a href="/" class="page-footer__logo">
-          <picture class="page-footer__logo-image">
-            <img src="img/footer-logo.svg" alt="Логотип Cat energy">
-          </picture>
+            <img class="page-footer__logo-image" src="img/footer-logo.svg" alt="Логотип Cat energy">
         </a>
         <ul class="page-footer__social social list">
           <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <svg class="social__icon">
-                <use href="img/vkontakte.svg"></use>
-              </svg><span class="visually-hidden">Вконтакте</span></a>
+              <img class="social__icon" src="img/vkontakte.svg"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <svg class="social__icon">
-                <use href="img/youtube.svg"></use>
-              </svg><span class="visually-hidden">YT</span></a>
+              <img class="social__icon" src="img/youtube.svg"><span class="visually-hidden">YT</span></a>
           </li>
           <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <svg class="social__icon">
-                <use href="img/telegram.svg"></use>
-              </svg><span class="visually-hidden">TG</span></a>
+              <img class="social__icon" src="img/telegram.svg"><span class="visually-hidden">TG</span></a>
           </li>
         </ul>
       </div>
       <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="academy__text">HTML Academy</p>
-        <svg class="academy__logo">
-          <use href="img\html_logo.svg"></use>
-        </svg>
-      </a>
+        <img src="img\html_logo.svg"></a>
     </div>
   </footer>
 </body>
