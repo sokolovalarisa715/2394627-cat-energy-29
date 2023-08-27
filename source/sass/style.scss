@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@use "variables" as *;
+
+.page-body {
+  height: 100%;
+  margin: 0;
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+  background: $primary-bg-color;
+}
+
+.visually-hidden {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      overflow: hidden;
+}
+
+.container {}
+
+.main-container {}
