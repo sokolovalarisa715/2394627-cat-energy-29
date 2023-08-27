@@ -9,36 +9,36 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <a href="/" class="main-header__logo">
+  <header class="main-header container">
+    <a href="#" class="main-header__logo">
       <div class="logo__image">
-            <a class="header__logo">
-              <img src="img/logo-mobile.png" width="33" height="38" alt="Кэт энерджи">
+            <a href="#" class="header__logo">
+              <img src="img/logo/logo-mobile.png" width="33" height="38" alt="Кэт энерджи">
             </a>
             </div>
             <div class="header__item">
-              <a class="header__logo-text">
-                <img src="img/logo-2.png" width="101" height="18" alt="Кэт энерджи">
+              <a href="#" class="header__logo-text">
+                <img src="img/logo/logo_2.png" width="101" height="18" alt="Кэт энерджи">
               </a>
       </div>
     </a>
     <div class="main-nav__wrapper">
       <nav class="main-nav">
-        <button class="burger-menu__toggle" type="button"><span class="visually-hidden"><img src="img/Logo_mobile.svg"
+        <button class="burger-menu__toggle" type="button"><span class="visually-hidden"><img src="img/logo/Logo_mobile.svg"
               alt="Кнопка меню"></span></button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list">
           <li class="site-list__item">
-            <a>
+            <a href="#" class="site-list__link">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a href="catalog.html" class="site-list__link">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a>
+            <a href="form.html" class="site-list__link">
               Подбор программы
             </a>
           </li>
@@ -52,9 +52,10 @@
         <h1 class="first-screen__title">Функциональное питание для котов</h1>
         <p class="first-screen__text">Занялся собой? Займись котом!</p>
         <div class="first-screen__photo">
-          <img src="img/index-can-mobile-1.png" alt="Банка корма">
+          <img src="img/content/index-can-mobile-1.png" alt="Банка корма">
+
         </div>
-        <a class="first-screen__button button" href="#">Подобрать программу</a>
+        <a class="sale__button first-screen__button button" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -62,25 +63,29 @@
         <ul class="programs__list list">
           <li class="programs__item program">
             <div class="programs__title-wrapper">
-              <img src="img/cat_slim.png" class="program__icon program__icon--slim" alt="Худой кот">
+              <div class="program__title-wrapper ">
+              <img src="img/content/cat_slim.png" class="program__icon program__icon--slim" alt="Худой кот">
               <p class="program__title program__title--slim title">Похудение</p>
+              </div>
             </div>
             <p class="program__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
             <a class="program__button button" href="#"><span class="program__button-text">Каталог slim</span>
-              <img class="program__button-icon" src="img/icon_arrow.svg" alt="Кнопка программ"></a>
+              <img class="program__button-icon" src="img/logo/icon_arrow.svg" alt="Кнопка программ"></a>
           </li>
           <li class="programs__item program">
             <div class="programs__title-wrapper">
-              <img src="img/cat_pro.png" class="program__icon program__icon--slim" alt="Толстый кот">
+              <div class="program__title-wrapper ">
+              <img src="img/content/cat_fat.png" class="program__icon program__icon--fat" alt="Толстый кот">
               <p class="program__title program__title--slim title">Набор массы</p>
+            </div>
             </div>
             <p class="program__text text">Заработать авторитет среди дворовых котов и
               даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
               мышцы!</p>
             <a class="program__button button" href="#"><span class="program__button-text">Каталог pro</span>
-              <img class="program__button-icon" src="img/icon_arrow.svg" alt="Кнопка Каталог"></a>
+              <img class="program__button-icon" src="img/logo/icon_arrow.svg" alt="Кнопка Каталог"></a>
           </li>
         </ul>
       </div>
@@ -134,18 +139,19 @@
         </div>
         <div class="example__slider slider">
           <div class="slider__wrapper">
+            <legend class="visually-hidden">Слайдер с котом</legend>
             <!--<Тут будет много кода для слайдера>-->
-              <img class="slider__image slider__image--before" src="" alt="">
-              <img class="slider__image slider__image--before" src="" alt="">
+              <img class="slider__image slider__image--before" src="img/content/table-before-2x.png" alt="Кот до">
+              <img class="slider__image slider__image--before" src="img/content/tablet-after-2x.png" alt="Кот после">
           </div>
           <div class="slider__rulling">
-              <img class="slider__thumb" src="img/thumb.svg" alt="Переключатель слайдера">
+              <img class="slider__thumb" src="img/logo/thumb.svg" alt="Переключатель слайдера">
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="container">
     <div class="page-footer footer__wrapper">
       <div class="page-footer__contacts contacts">
         <div class="contacts__wrapper">
@@ -157,28 +163,29 @@
           </p>
         </div>
         <div class="contacts__map">
+          <legend class="visually-hidden">Интерактивная карта</legend>
           <!--тут будет много кода карты и айфрейм и указатель и всё красиво-->
         </div>
       </div>
       <div class="page-footer__links">
-        <a href="/" class="page-footer__logo">
-            <img class="page-footer__logo-image" src="img/footer-logo.svg" alt="Логотип Cat energy">
+        <a href="#" class="page-footer__logo">
+            <img class="page-footer__logo-image" src="img/logo/footer-logo.svg" alt="Логотип Cat energy">
         </a>
         <ul class="page-footer__social social list">
           <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/vkontakte.svg"><span class="visually-hidden">Вконтакте</span></a>
+              <img class="social__icon" src="img/logo/vkontakte.svg"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/youtube.svg"><span class="visually-hidden">YT</span></a>
+              <img class="social__icon" src="img/logo/youtube.svg"><span class="visually-hidden">YT</span></a>
           </li>
           <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/telegram.svg"><span class="visually-hidden">TG</span></a>
+              <img class="social__icon" src="img/logo/telegram.svg"><span class="visually-hidden">TG</span></a>
           </li>
         </ul>
       </div>
       <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="academy__text">HTML Academy</p>
-        <img src="img\html_logo.svg"></a>
+        <img src="img/logo/html_logo.svg"></a>
     </div>
   </footer>
 </body>

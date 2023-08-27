@@ -1,25 +1,27 @@
-$primary-text-color: #000000;
-$secondary-text-color: #444444;
+//colors:
+$accent-color: #68b738;
+$accent-color-hover: #5eaa2f;
+$basic-white: #ffffff;
+$additional-background: #f2f2f2;
+$grey-background: #eaeaea;
+$grey-additional-background: #e6e6e6;
+$icon-color: #666666;
+$main-text-color: #444444;
+$basic-black: #000000;
+$additional-black: #111111;
+$additional-black2: #222222;
+$grey-border: #cdcdcd;
+$additional-grey-border: #d9d9d9;
+$grey-border-catalogue: #ebebeb;
+$grey-border-form: #e7e7e7;
+$grey-border-form-disabled: #bababa;
+$plus-button: #d3d3d3;
+$error-input: #ff8282;
 
-$primary-font-family: oswald, arial, sans-serif;
-$secondary-font-family: lato, arial, sans-serif;
+//fonts:
+$oswald-font: "Oswald", "Arial", sans-serif;
+$lato-font: "Lato", "Arial", sans-serif;
 
-$primary-color: #68b738;
-$secondary-color: #ffffff;
-
-$primary-bg-color: #ffffff;
-$secondary-bg-color: #f2f2f2;
-$special-bg-color: #eaeaea;
-
-$primary-border-input: #e7e7e7;
-
-$color-line-nav: #e6e6e6;
-$color-line-block: #cdcdcd;
-
-$green-light: #5eaa2f;
-
-$grey-lighter: #ebebeb;
-$grey-light: #d9d9d9;
-$grey-dark: #222222;
-
-$status-error: #ff8282;
+//breakpoints
+$desktopWidth: 1440px;
+$tabletWidth: 768px;
