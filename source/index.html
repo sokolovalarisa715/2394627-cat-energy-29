@@ -22,7 +22,7 @@
               </a>
       </div>
     </a>
-    <div class="main-nav__wrapper">
+    <div class="main-nav__wrapper main-nav__wrapper--active ">
       <nav class="main-nav">
         <button class="burger-menu__toggle" type="button"><span class="visually-hidden"><img src="img/logo/Logo_mobile.svg"
               alt="Кнопка меню"></span></button>
@@ -51,9 +51,8 @@
       <div class="first-screen__wrapper container">
         <h1 class="first-screen__title">Функциональное питание для котов</h1>
         <p class="first-screen__text">Занялся собой? Займись котом!</p>
-        <div class="first-screen__photo">
-          <img src="img/content/index-can-mobile-1.png" alt="Банка корма">
-
+        <div class="first-screen__photo-wrapper">
+          <img class="image" src="img/content/index-can-mobile-1.png" alt="Банка корма">
         </div>
         <a class="sale__button first-screen__button button" href="#">Подобрать программу</a>
       </div>
@@ -62,8 +61,8 @@
       <div class="container">
         <ul class="programs__list list">
           <li class="programs__item program">
-            <div class="programs__title-wrapper">
-              <div class="program__title-wrapper ">
+            <div class="programs__wrapper">
+              <div class="program__title-wrapper  program__title">
               <img src="img/content/cat_slim.png" class="program__icon program__icon--slim" alt="Худой кот">
               <p class="program__title program__title--slim title">Похудение</p>
               </div>
@@ -75,10 +74,10 @@
               <img class="program__button-icon" src="img/logo/icon_arrow.svg" alt="Кнопка программ"></a>
           </li>
           <li class="programs__item program">
-            <div class="programs__title-wrapper">
-              <div class="program__title-wrapper ">
+            <div class="programs__wrapper">
+              <div class="program__title-wrapper  program__title">
               <img src="img/content/cat_fat.png" class="program__icon program__icon--fat" alt="Толстый кот">
-              <p class="program__title program__title--slim title">Набор массы</p>
+              <p class="program__title program__title--fat title">Набор массы</p>
             </div>
             </div>
             <p class="program__text text">Заработать авторитет среди дворовых котов и
@@ -153,10 +152,10 @@
   </main>
   <footer class="container">
     <div class="page-footer footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <div class="contacts__wrapper">
+      <div class="page-footer__contacts contacts contacts__info">
+        <div class="contacts__wrapper contacts-background contacts__partnership">
           <p class="contacts__title title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__text text">
+          <p class="contacts__text text contacts__text--address ">
             <span>ул. Большая</span>
             <span>Конюшенная, д. 19/8</span>
             <span> Санкт-Петербург</span>
@@ -184,8 +183,8 @@
         </ul>
       </div>
       <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="academy__text">HTML Academy</p>
-        <img src="img/logo/html_logo.svg"></a>
+        <p class="academy__text academy__caption ">HTML Academy</p>
+        <img src="img/logo/html_logo.svg" class="academy__logo"></a>
     </div>
   </footer>
 </body>

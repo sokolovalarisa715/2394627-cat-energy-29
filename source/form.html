@@ -22,13 +22,13 @@
       </a>
     </div>
   </a>
-  <div class="main-nav__wrapper">
+  <div class="main-nav__wrapper main-nav__wrapper--active ">
     <nav class="main-nav">
       <button class="burger-menu__toggle" type="button"><span class="visually-hidden"><img
             src="img/logo/Logo_mobile.svg" alt="Кнопка меню"></span></button>
       <ul class="main-nav__list list">
         <li class="site-list__item">
-          <a href="#" class="site-list__link">
+          <a href="index.html" class="site-list__link">
             Главная
           </a>
         </li>
@@ -38,7 +38,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a href="form.html" class="site-list__link">
+          <a href="#" class="site-list__link">
             Подбор программы
           </a>
         </li>
@@ -49,7 +49,7 @@
   <main class="main-form__container">
     <form class="form" action="#" method="post" target="_blank">
       <div class="form__first-screen form__container">
-        <h1 class="form__title title title--h1">Подбор программы</h1>
+        <h1 class="main-form__container__title title title--h1">Подбор программы</h1>
         <p class="form__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
       </div>
@@ -158,10 +158,10 @@
   </main>
     <footer class="container">
       <div class="page-footer footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <div class="contacts__wrapper">
+        <div class="page-footer__contacts contacts contacts__info">
+          <div class="contacts__wrapper contacts-background contacts__partnership">
             <p class="contacts__title title">приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__text text">
+            <p class="contacts__text text contacts__text--address ">
               <span>ул. Большая</span>
               <span>Конюшенная, д. 19/8</span>
               <span> Санкт-Петербург</span>
@@ -189,8 +189,8 @@
           </ul>
         </div>
         <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="academy__text">HTML Academy</p>
-          <img src="img/logo/html_logo.svg">
+          <p class="academy__text academy__caption ">HTML Academy</p>
+          <img src="img/logo/html_logo.svg" class="academy__logo">
         </a>
       </div>
     </footer>
