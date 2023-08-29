@@ -1,24 +1,14 @@
-@use "variables" as *;
-
-.page-body {
-  height: 100%;
-  margin: 0;
-  font-family: $primary-font-family;
-  color: $primary-text-color;
-  background: $primary-bg-color;
-}
-
-.visually-hidden {
-      position: absolute;
-      clip: rect(0 0 0 0);
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      border: 0;
-      overflow: hidden;
-}
-
-.container {}
-
-.main-container {}
+@use "main/variables" as *;
+@use "main/base";
+@use "main/buttons";
+@use "main/fonts";
+@use "main/header";
+@use "main/map";
+@use "main/page-footer";
+@use "main/text";
+@use "index/example";
+@use "index/first-screen";
+@use "index/programs";
+@use "index/special";
+@use "catalog/catalog";
+@use "form/form";
