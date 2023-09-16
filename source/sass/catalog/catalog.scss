@@ -586,13 +586,13 @@
 .gift {
   padding-top: 58px;
   padding-bottom: 43px;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/catalog-image.png") no-repeat center center/cover;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/catalog-image-m.png") no-repeat center center/cover;
   display: flex;
 }
 
 @media (min-resolution: 2dppx) {
   .gift {
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/catalog-image.png") no-repeat center center/cover;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/catalog-image-m.png") no-repeat center center/cover;
   }
 }
 
