@@ -71,7 +71,7 @@
   font-size: 14px;
   position: relative;
 
-  @media (max-width: $tabletWidth 1px) {
+  @media (max-width: $tabletWidth) {
     margin-top: 3px;
   }
 

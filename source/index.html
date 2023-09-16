@@ -11,39 +11,26 @@
   <link rel="icon" href="img/logo/icon-152.svg" type="image/svg+xml">
 </head>
 <body class="page-body">
-  <header class="main-header container">
-      <div class="logo__image">
-        <a href="#" class="main-header__logo">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-dsk.svg">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-            <img class="logo__image" src="img/logo/logo-mobile.svg" width="238" height="47" alt="Логотип Cat Energy.">
-          </picture>
-        </a>
-      </div>
-    <div class="main-nav__wrapper main-nav__wrapper--active ">
-      <nav class="main-nav main-header__nav">
-        <ul class="main-nav__list list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link main-nav__link--current">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link main-nav__link--current">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link main-nav__link--current">
-              Подбор программы
-            </a>
-          </li>
+  <!--При отключенном js класс nojs-->
+  <!--<header class="main-header main-header--nojs main-header--main container">-->
+    <header class="main-header main-header--main container"></header>
+    <a href="#" class="main-header__logo">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="img/logo/logo-dsk.svg">
+      <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+      <img class="logo__image" src="img/logo/logo-mobile.svg" width="238" height="47" alt="Логотип Cat Energy.">
+    </picture>
+  </a>
+    <nav class="main-header__navigation navigation">
+      <div class="navigation__wrapper">
+        <ul class="navigation__list list">
+          <li class="navigation__item"><a class="navigation__link navigation__link--current" href="/">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
         </ul>
-        <button class="burger-menu__toggle burger-menu__toggle--active toggle" type="button"><span class="visually-hidden"><img
-              src="img/logo/Logo_mobile.svg" alt="Кнопка меню"></span></button>
-      </nav>
-    </div>
+      </div><button class="navigation__button" type="button"><span class="navigation__toggle"><span
+            class="visually-hidden">Открыть меню</span></span></button>
+    </nav>
   </header>
   <main class="main-container">
     <section class="first-screen">
