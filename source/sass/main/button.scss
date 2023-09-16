@@ -9,7 +9,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.first-screen__button .button--secondary {
+.first-screen__button {
   justify-content: center;
   align-items: center;
   background-color: #68b738;
@@ -71,16 +71,16 @@
   font-size: 14px;
   position: relative;
 
-  @media (max-width: $tabletWidth) {
+  @media (max-width: 768px) {
     margin-top: 3px;
   }
 
-  @media (min-width: $tabletWidth) {
+  @media (min-width: 768px) {
     max-width: 247px;
     font-size: 20px;
   }
 
-  @media (min-width: $desktopWidth) {
+  @media (min-width: 1440px) {
     grid-row: 3/4;
   }
 }

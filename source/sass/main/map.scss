@@ -18,7 +18,7 @@
   right: 0;
   margin: auto;
 
- @media (min-width: $tabletWidth) {
+ @media (min-width: 768px) {
    height: 400px;
 
    &::before {
@@ -27,7 +27,7 @@
    }
  }
 
- @media (min-width: $desktopWidth) {
+ @media (min-width: 1440px) {
    &::before {
      top: -34px;
      left: 490px;
