@@ -198,7 +198,6 @@
 }
 
 @media (max-width: 767px) {
-
   .form__field-list--questionary,
   .form__field-list--contacts {
     padding-left: 20px;
@@ -420,7 +419,7 @@
   outline: 2px solid #444444;
 }
 
-.form__control:focus+.form__field-icon {
+.form__control:focus+ .form__field-icon {
   color: #68b738;
 }
 
@@ -428,7 +427,7 @@
   outline: 2px solid #ff8282;
 }
 
-.form__control--error+.form__field-icon {
+.form__control--error+ .form__field-icon {
   color: #ff8282;
 }
 
@@ -479,56 +478,56 @@
   }
 }
 
-.form__radio:checked+.form__label--radio::after {
+.form__radio:checked+ .form__label--radio::after {
   background-color: #68b738;
 }
 
-.form__radio:hover+.form__label--radio::before {
+.form__radio:hover+ .form__label--radio::before {
   border-color: #bababa;
 }
 
-.form__radio:hover+.form__label--radio::after {
+.form__radio:hover+ .form__label--radio::after {
   background-color: #68b738;
 }
 
-.form__radio:disabled+.form__label--radio {
+.form__radio:disabled+ .form__label--radio {
   color: rgba(34, 34, 34, 0.3);
   cursor: auto;
 }
 
-.form__radio:disabled+.form__label--radio::before {
+.form__radio:disabled+ .form__label--radio::before {
   border-color: rgba(186, 186, 186, 0.3);
 }
 
-.form__radio:disabled+.form__label--radio::after {
+.form__radio:disabled+ .form__label--radio::after {
   background-color: rgba(104, 183, 56, 0.3);
 }
 
-.form__checkbox:checked+.form__label--checkbox::after {
+.form__checkbox:checked+ .form__label--checkbox::after {
   opacity: 1;
   background: url("../img/logo/tick.svg") no-repeat center center/cover;
 }
 
-.form__checkbox:hover+.form__label--checkbox::before {
+.form__checkbox:hover+ .form__label--checkbox::before {
   border-color: #bababa;
 }
 
-.form__checkbox:hover+.form__label--checkbox::after {
+.form__checkbox:hover+ .form__label--checkbox::after {
   opacity: 1;
   background: url("../img/logo/tick.svg") no-repeat center center/cover;
 }
 
-.form__checkbox:disabled+.form__label--checkbox {
+.form__checkbox:disabled+ .form__label--checkbox {
   color: rgba(0, 0, 0, 0.3);
   cursor: auto;
 }
 
-.form__checkbox:disabled+.form__label--checkbox::before,
-.form__checkbox:disabled+.form__label--checkbox::after {
+.form__checkbox:disabled+ .form__label--checkbox::before,
+.form__checkbox:disabled+ .form__label--checkbox::after {
   opacity: 0.3;
 }
 
-.form__checkbox:disabled+.form__label--checkbox::after {
+.form__checkbox:disabled+ .form__label--checkbox::after {
   background: url("../img/logo/tick.svg") no-repeat center center/cover;
 }
 

@@ -154,20 +154,20 @@
 }
 
 @media (max-width: 767px) {
-  sale__button {
+  .sale__button {
     margin-top: 3px;
   }
 }
 
 @media (min-width: 768px) {
-  sale__button {
+  .sale__button {
     max-width: 247px;
     font-size: 20px;
   }
 }
 
 @media (min-width: 1440px) {
-  sale__button {
+  .sale__button {
     grid-row: 3/4;
   }
 }
