@@ -12,8 +12,9 @@
 </head>
 
 <body class="page-body">
-  <!--<header class="main-header main-header--nojs main-header--main container">-->
-  <header class="main-header main-header--main container">
+    <!--При отключенном js класс nojs-->
+  <header class="main-header main-header--nojs container">
+  <!--<header class="main-header container">-->
     <a href="index.html" class="main-header__logo">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo/logo-dsk.svg">
@@ -24,10 +25,10 @@
     <nav class="main-header__navigation navigation">
       <div class="navigation__wrapper">
         <ul class="navigation__list list">
-          <li class="navigation__item"><a class="navigation__link navigation__link--current"
+          <li class="navigation__item"><a class="navigation__link "
               href="index.html">Главная</a></li>
           <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Подбор программы</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#">Подбор программы</a></li>
         </ul>
       </div><button class="navigation__button" type="button"><span class="navigation__toggle"><span
             class="visually-hidden">Открыть меню</span></span></button>
