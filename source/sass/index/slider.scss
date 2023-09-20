@@ -4,7 +4,9 @@
   min-width: 280px;
 
 @media (min-width: 768px) {
-    min-width: 560px;
+    .example__slider{
+      min-width: 560px;
+    }
   }
 }
 
@@ -17,7 +19,9 @@
 
 
 @media (min-width: 768px) {
-    width: 560px;
-    height: 512px;
+    .slider-wrapper {
+      width: 560px;
+      height: 512px;
+    }
   }
 }

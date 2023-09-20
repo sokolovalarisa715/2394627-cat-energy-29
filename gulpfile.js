@@ -10,7 +10,9 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
-import browser from 'browser-sync';// Stylesexport const styles = () => {
+import browser from 'browser-sync';
+// Stylesexport
+const styles = () => {
 return gulp.src('source/sass/style.scss', { sourcemaps: true })
 .pipe(plumber())
 .pipe(sass().on('error', sass.logError))
@@ -21,27 +23,38 @@ csso()
 .pipe(rename('style.min.css'))
 .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
 .pipe(browser.stream());
-}// HTMLconst html = () => {
+}
+// HTML
+const html = () => {
 return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
-}// Scriptsconst scripts = () => {
+}
+// Scripts
+const scripts = () => {
 return gulp.src('source/js/script.js')
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
-}// Imagesconst optimizeImages = () => {
+}
+// Images
+const optimizeImages = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(squoosh())
 .pipe(gulp.dest('build/img'))
-}const copyImages = () => {
+}
+const copyImages = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(gulp.dest('build/img'))
-}// WebPconst createWebp = () => {
+}
+// WebP
+const createWebp = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
 .pipe(squoosh({
 webp: {}
 }))
 .pipe(gulp.dest('build/img'))
-}// SVGconst svg = () =>
+}
+// SVG
+const svg = () =>
 gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));const sprite = () => {
@@ -52,7 +65,9 @@ inlineSvg: true
 }))
 .pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
-}// Copyconst copy = (done) => {
+}
+// Copy
+const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
@@ -61,9 +76,13 @@ base: 'source'
 })
 .pipe(gulp.dest('build'))
 done();
-}// Cleanconst clean = () => {
+}
+// Clean
+const clean = () => {
 return del('build');
-};// Serverconst server = (done) => {
+};
+// Server
+const server = (done) => {
 browser.init({
 server: {
 baseDir: 'build'
@@ -73,14 +92,20 @@ notify: false,
 ui: false,
 });
 done();
-}// Reloadconst reload = (done) => {
+}
+// Reload
+const reload = (done) => {
 browser.reload();
 done();
-}// Watcherconst watcher = () => {
+}
+// Watcher
+const watcher = () => {
 gulp.watch('source/sass/**/*.scss', gulp.series(styles));
 gulp.watch('source/js/script.js', gulp.series(scripts));
 gulp.watch('source/*.html', gulp.series(html, reload));
-}// Buildexport const build = gulp.series(
+}
+// Buildexport
+const build = gulp.series(
 clean,
 copy,
 optimizeImages,
@@ -92,7 +117,9 @@ svg,
 sprite,
 createWebp
 ),
-);// Defaultexport default gulp.series(
+);
+// Default
+export default gulp.series(
 clean,
 copy,
 copyImages,
