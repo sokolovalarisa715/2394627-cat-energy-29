@@ -3,10 +3,8 @@
 .example__slider {
   min-width: 280px;
 
-@media (min-width: 768px) {
-    .example__slider{
-      min-width: 560px;
-    }
+  @media (min-width: 768px) {
+    min-width: 560px;
   }
 }
 
@@ -17,11 +15,8 @@
   overflow: hidden;
   margin: 0 auto;
 
-
-@media (min-width: 768px) {
-    .slider-wrapper {
-      width: 560px;
-      height: 512px;
-    }
+  @media (min-width: 768px) {
+    width: 560px;
+    height: 512px;
   }
 }
