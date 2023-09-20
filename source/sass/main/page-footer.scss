@@ -115,8 +115,8 @@
   }
 }
 
+.contacts__partnership {
 @media (min-width: 1440px) {
-  .contacts__partnership {
     position: absolute;
     height: 198px;
     left: 0;
@@ -162,33 +162,33 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: 768px) {
+    .contacts__title {
+      font-size: 20px;
+      line-height: 26px;
+      padding-top: 2px;
+    }
+  }
 }
 
-.contacts__text--address {
+.contacts__info--address {
   line-height: 20px;
   margin: 0;
 }
 
-@media (min-width: 768px) {
-  .contacts__title {
-    font-size: 20px;
-    line-height: 26px;
-    padding-top: 2px;
-  }
-
-  .contacts__text--address {
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
-  }
-}
+.contacts__info--address {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
 
 @media (min-width: 1440px) {
-  .contacts__text--address {
+  .contacts__info--address {
     text-align: left;
+    }
   }
 }
 

@@ -14,7 +14,7 @@
 <body class="page-body">
   <!--При отключенном js класс nojs-->
   <header class="main-header main-header--nojs main-header--main container">
-  <!--<header class="main-header main-header--main container">-->
+    <!--<header class="main-header main-header--main container">-->
     <a href="#" class="main-header__logo">
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo/logo-dsk.svg">
@@ -38,7 +38,7 @@
       <div class="first-screen__wrapper container">
         <h1 class="first-screen__title title title--h1">Функциональное питание для котов</h1>
         <p class="first-screen__text">Занялся собой? Займись котом!</p>
-        <div class="first-screen__photo-wrapper">
+        <div class="first-screen__image-wrapper">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/content/index-can-dsk.png">
             <source media="(min-width: 768px)" srcset="img/content/index-can-tb.png">
@@ -113,81 +113,82 @@
             Отличный результат без изнуряющих
             тренировок! При этом он не менял своих привычек
             и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__numbers numbers">
+            <dl class="numbers__list list">
+              <div class="numbers__item">
+                <dt class="numbers__number">5 кг</dt>
+                <dd class="numbers__text text">снижение веса</dd>
+              </div>
+              <div class="numbers__item">
+                <dt class="numbers__number">60 дней</dt>
+                <dd class="numbers__text text">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="numbers__legend"><span class="numbers__legend-text">Затраты на питание:</span><span
+                class="numbers__legend-money">15 000 РУБ.</span></p>
+          </div>
         </div>
-        <div class="example__numbers nambers">
-          <dl class="numbers__list list">
-            <div class="numbers__item">
-              <dt class="numbers__number">5 кг</dt>
-              <dd class="numbers__text text">снижение веса</dd>
-            </div>
-            <div class="numbers__item">
-              <dt class="numbers__number">60 дней</dt>
-              <dd class="numbers__text text">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="numbers__legend ">Затраты на питание: 15 000 РУБ.</p>
-        </div>
-        <div class="contacts__map">
-          <legend class="visually-hidden">Интерактивная карта</legend>
-          <div class="map">
-            <div class="map__image map__iframe">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.32047247715258!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694433839061!5m2!1sru!2sru"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="example__slider">
+          <div class="slider-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/slider/compare-slider-desk.png">
+              <source media="(min-width: 768px)" srcset="img/slider/compare-slider-tab.png">
+              <img class="image" src="img/slider/compare-slider-mob.png" alt="Котик-слайдер">
+            </picture>
           </div>
         </div>
       </div>
+
+      </div>
+
     </section>
   </main>
-  <footer class="page-footer ">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts contacts__info container">
-        <div class="contacts__wrapper contacts-background contacts__partnership">
-          <p class="contacts__title title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__text text contacts__text--address ">
-            <span>ул. Большая</span>
-            <span>Конюшенная, д. 19/8</span>
-            <span> Санкт-Петербург</span>
-          </p>
+  <footer class="page-footer">
+    <div class="page-footer__contacts contacts">
+      <div class="contacts__partnership container">
+        <div class="contacts__wrapper">
+          <p class="contacts__info contacts__info--title title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__info contacts__info--address text"><span>ул. Большая Конюшенная, д. 19/8
+            </span><span>Санкт-Петербург</span></p>
         </div>
-        <!--<div class="contacts__map">
-          <legend class="visually-hidden">Интерактивная карта</legend>
-          <div class="map">
-            <div class="map__image map__iframe">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-                width="766" height="560" allowfullscreen
-                title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
-              </iframe>
-            </div>
-          </div>
-        </div>-->
       </div>
-      <div class="page-footer__links page-footer__bottom">
-        <a href="#" class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo/footer-logo.svg" alt="Логотип Cat energy">
-        </a>
+      <div class="contacts__map map" id="map"><span class="visually-hidden">Cat Energy на карте</span><iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876791631!2d30.320467112813738!3d59.93871647481054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682634386696!5m2!1sru!2sru"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта."></iframe>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.svg"><img class="map__image"
+            src="img/map-mobile.svg" width="320" height="362" alt="Местонахождение на карте.">
+        </picture>
+      </div>
+    </div>
+    <div class="page-footer__bottom">
+      <div class="page-footer__wrapper container"><a class="page-footer__logo logo" href="/"><img
+            src="img/logo/footer-logo.svg"><span class="visually-hidden">Cat Energy</span></a>
         <ul class="page-footer__social social list">
-          <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/logo/vkontakte.svg"><span class="visually-hidden">Вконтакте</span></a>
-          </li>
-          <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/logo/youtube.svg"><span class="visually-hidden">YT</span></a>
-          </li>
-          <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/logo/telegram.svg"><span class="visually-hidden">TG</span></a>
-          </li>
-        </ul>
+          <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><svg class="social__icon"
+                width="28" height="22" viewBox="0 0 28 22">
+                <img src="img/logo/vkontakte.svg">
+              </svg> <span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#"><svg class="social__icon"
+                width="28" height="22" viewBox="0 0 28 22">
+                <img src="img/logo/youtube.svg">
+              </svg> <span class="visually-hidden">Youtube</span></a></li>
+          <li class="social__item"><a class="social__link social__link--telegram" href="#"><svg class="social__icon"
+                width="28" height="22" viewBox="0 0 28 22">
+                <img src="img/logo/telegram.svg">
+              </svg> <span class="visually-hidden">Telegram</span></a></li>
+        </ul><a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive"><span
+            class="academy__caption">HTML Academy</span> <svg class="academy__logo" width="27" height="34"
+            viewBox="0 0 27 34">
+            <img src="img/logo/html_logo.svg">
+          </svg></a>
       </div>
-      <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="academy__text academy__caption ">HTML Academy</p>
-        <img src="img/logo/html_logo.svg" class="academy__logo">
-      </a>
     </div>
   </footer>
-  <script src="js/menu.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

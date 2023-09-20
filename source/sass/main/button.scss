@@ -31,18 +31,18 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-//.button--secondary {
-//  justify-content: center;
-//  align-items: center;
-//  background-color: #f2f2f2;
-//  min-height: 40px;
-//  width: 100%;
-//  color: #444444;
-//  border-color: #f2f2f2;
-//  box-sizing: border-box;
-//  padding: 10px;
-//  border-width: 0;
-//}
+.button--secondary {
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  min-height: 40px;
+  width: 100%;
+  color: #444444;
+  border-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 10px;
+  border-width: 0;
+}
 
 .button--secondary:hover {
   background-color: #ebebeb;
@@ -82,5 +82,23 @@
 
   @media (min-width: 1440px) {
     grid-row: 3/4;
+  }
+}
+
+.add-card__button {
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: 768px) {
+    max-width: 706px;
+    margin-top: 23px;
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 244px;
+    font-size: 16px;
+    margin-top: 0;
   }
 }

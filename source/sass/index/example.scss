@@ -54,19 +54,19 @@
   }
 }
 
-.example__description {
+.example__text{
   margin-top: 0;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  .example__description {
+  .example__text {
     margin-bottom: 54px;
   }
 }
 
 @media (min-width: 1440px) {
-  .example__description {
+  .example__text {
     margin-bottom: 66px;
   }
 }
@@ -176,7 +176,7 @@
   }
 }
 
-.numbers__description {
+.numbers__text {
   font-size: 12px;
   line-height: 1;
   position: absolute;
@@ -188,7 +188,7 @@
 }
 
 @media (min-width: 768px) {
-  .numbers__description {
+  .numbers__text {
     font-size: 14px;
     max-width: 125px;
     bottom: -4px;
@@ -223,4 +223,12 @@
     gap: 63px;
     align-items: flex-start;
   }
+}
+
+.slider-wrapper {
+  width: 280px;
+  height: 256px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
