@@ -1,0 +1,104 @@
+@use "main/variables" as*;
+
+.button {
+  display: inline-flex;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+.first-screen__button {
+  justify-content: center;
+  align-items: center;
+  background-color: #68b738;
+  min-height: 40px;
+  width: 100%;
+  color: #ffffff;
+  border-color: #68b738;
+  box-sizing: border-box;
+  padding: 10px;
+  border-width: 0;
+}
+
+.first-screen__button:hover {
+  background-color: #5eaa2f;
+}
+
+.first-screen__button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--secondary {
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  min-height: 40px;
+  width: 100%;
+  color: #444444;
+  border-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 10px;
+  border-width: 0;
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.button--more:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+  }
+
+  .first-screen__button {
+    min-height: 54px;
+  }
+}
+
+.first-screen__button {
+  font-size: 14px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    margin-top: 3px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 247px;
+    font-size: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-row: 3/4;
+  }
+}
+
+.add-card__button {
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: 768px) {
+    max-width: 706px;
+    margin-top: 23px;
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 244px;
+    font-size: 16px;
+    margin-top: 0;
+  }
+}

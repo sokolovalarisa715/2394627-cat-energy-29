@@ -1,0 +1,74 @@
+@use "main/variables" as*;
+
+body {
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.image {
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 100%;
+  }
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}

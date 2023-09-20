@@ -1,0 +1,54 @@
+@use "main/variables" as*;
+
+.map {
+  height: 362px;
+  position: relative;
+}
+
+.map::before {
+  position: absolute;
+  content: "";
+  background: url("../img/content/map-pin.png") no-repeat center center/contain;
+  width: 57px;
+  height: 53px;
+  z-index: 2;
+  top: 0;
+  left: 11px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    height: 400px;
+
+    &::before {
+      width: 113px;
+      height: 106px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &::before {
+      top: -34px;
+      left: 490px;
+    }
+  }
+}
+
+.map__image {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  object-fit: cover;
+  margin: auto;
+}
+
+.map__iframe {
+  z-index: 2;
+  position: relative;
+}

@@ -1,0 +1,56 @@
+@use "main/variables" as*;
+
+.main-header {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header {
+    background-color: #ffffff;
+  }
+
+  .main-header--nojs {
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header {
+    padding-top: 53px;
+  }
+}
+
+.main-header__logo {
+  @media (max-width: 767px) {
+    .main-header__logo--nojs {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 17px;
+    }
+  }
+}
+
+
+.main-header__navigation {
+  @media (max-width: 767px) {
+    .main-header__navigation--nojs {
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+}

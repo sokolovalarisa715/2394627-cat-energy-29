@@ -6,55 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="img/logo/icon-16.svg" type="image/svg+xml">
+  <link rel="icon" href="img/logo/icon-32.svg" type="image/svg+xml">
+  <link rel="icon" href="img/logo/icon-152.svg" type="image/svg+xml">
 </head>
 
 <body class="page-body">
-  <header class="main-header container">
+  <!--При отключенном js класс nojs-->
+  <header class="main-header main-header--nojs main-header--main container">
+    <!--<header class="main-header main-header--main container">-->
     <a href="#" class="main-header__logo">
-      <div class="logo__image">
-            <a href="#" class="header__logo">
-              <img src="img/logo/logo-mobile.png" width="33" height="38" alt="Кэт энерджи">
-            </a>
-            </div>
-            <div class="header__item">
-              <a href="#" class="header__logo-text">
-                <img src="img/logo/logo_2.png" width="101" height="18" alt="Кэт энерджи">
-              </a>
-      </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-dsk.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+        <img class="logo__image" src="img/logo/logo-mobile.svg" width="238" height="47" alt="Логотип Cat Energy.">
+      </picture>
     </a>
-    <div class="main-nav__wrapper main-nav__wrapper--active ">
-      <nav class="main-nav">
-        <button class="burger-menu__toggle" type="button"><span class="visually-hidden"><img src="img/logo/Logo_mobile.svg"
-              alt="Кнопка меню"></span></button>
-        <ul class="main-nav__list list">
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link">
-              Подбор программы
-            </a>
-          </li>
+    <nav class="main-header__navigation navigation">
+      <div class="navigation__wrapper">
+        <ul class="navigation__list list">
+          <li class="navigation__item"><a class="navigation__link navigation__link--current" href="/">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
         </ul>
-      </nav>
-    </div>
+      </div><button class="navigation__button" type="button"><span class="navigation__toggle"><span
+            class="visually-hidden">Открыть меню</span></span></button>
+    </nav>
   </header>
   <main class="main-container">
     <section class="first-screen">
       <div class="first-screen__wrapper container">
-        <h1 class="first-screen__title">Функциональное питание для котов</h1>
+        <h1 class="first-screen__title title title--h1">Функциональное питание для котов</h1>
         <p class="first-screen__text">Занялся собой? Займись котом!</p>
-        <div class="first-screen__photo-wrapper">
-          <img class="image" src="img/content/index-can-mobile-1.png" alt="Банка корма">
+        <div class="first-screen__image-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/content/index-can-dsk.png">
+            <source media="(min-width: 768px)" srcset="img/content/index-can-tb.png">
+            <img class="image" src="img/content/index-can-mobile-1.png" alt="Банка корма">
+          </picture>
         </div>
-        <a class="sale__button first-screen__button button" href="#">Подобрать программу</a>
+        <a class="sale__button first-screen__button button button--secondary" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -63,27 +54,27 @@
           <li class="programs__item program">
             <div class="programs__wrapper">
               <div class="program__title-wrapper  program__title">
-              <img src="img/content/cat_slim.png" class="program__icon program__icon--slim" alt="Худой кот">
-              <p class="program__title program__title--slim title">Похудение</p>
+                <img src="img/content/slim.svg" class="program__icon program__icon--slim" alt="Худой кот">
+                <p class="program__title program__title--slim title">Похудение</p>
               </div>
             </div>
             <p class="program__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.</p>
-            <a class="program__button button" href="#"><span class="program__button-text">Каталог slim</span>
+            <a class="program__link  button" href="#"><span class="program__button-text">Каталог slim</span>
               <img class="program__button-icon" src="img/logo/icon_arrow.svg" alt="Кнопка программ"></a>
           </li>
           <li class="programs__item program">
             <div class="programs__wrapper">
               <div class="program__title-wrapper  program__title">
-              <img src="img/content/cat_fat.png" class="program__icon program__icon--fat" alt="Толстый кот">
-              <p class="program__title program__title--fat title">Набор массы</p>
-            </div>
+                <img src="img/content/fat.svg" class="program__icon program__icon--fat" alt="Толстый кот">
+                <p class="program__title program__title--fat title">Набор массы</p>
+              </div>
             </div>
             <p class="program__text text">Заработать авторитет среди дворовых котов и
               даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые
               мышцы!</p>
-            <a class="program__button button" href="#"><span class="program__button-text">Каталог pro</span>
+            <a class="program__link  button" href="#"><span class="program__button-text">Каталог pro</span>
               <img class="program__button-icon" src="img/logo/icon_arrow.svg" alt="Кнопка Каталог"></a>
           </li>
         </ul>
@@ -122,71 +113,82 @@
             Отличный результат без изнуряющих
             тренировок! При этом он не менял своих привычек
             и по-прежнему спит по 16 часов в день.</p>
-        </div>
-        <div class="example__numbers nambers">
-          <dl class="numbers__list list">
-            <div class="numbers__item">
-              <dt class="numbers__number">5 кг</dt>
-              <dd class="numbers__text text">снижение веса</dd>
-            </div>
-            <div class="numbers__item">
-              <dt class="numbers__number">60 дней</dt>
-              <dd class="numbers__text text">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="example__summery">Затраты на питание: 15 000 РУБ.</p>
-        </div>
-        <div class="example__slider slider">
-          <div class="slider__wrapper">
-            <legend class="visually-hidden">Слайдер с котом</legend>
-            <!--<Тут будет много кода для слайдера>-->
-              <img class="slider__image slider__image--before" src="img/content/table-before-2x.png" alt="Кот до">
-              <img class="slider__image slider__image--before" src="img/content/tablet-after-2x.png" alt="Кот после">
+          <div class="example__numbers numbers">
+            <dl class="numbers__list list">
+              <div class="numbers__item">
+                <dt class="numbers__number">5 кг</dt>
+                <dd class="numbers__text text">снижение веса</dd>
+              </div>
+              <div class="numbers__item">
+                <dt class="numbers__number">60 дней</dt>
+                <dd class="numbers__text text">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="numbers__legend"><span class="numbers__legend-text">Затраты на питание:</span><span
+                class="numbers__legend-money">15 000 РУБ.</span></p>
           </div>
-          <div class="slider__rulling">
-              <img class="slider__thumb" src="img/logo/thumb.svg" alt="Переключатель слайдера">
+        </div>
+        <div class="example__slider">
+          <div class="slider-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/slider/compare-slider-desk.png">
+              <source media="(min-width: 768px)" srcset="img/slider/compare-slider-tab.png">
+              <img class="image" src="img/slider/compare-slider-mob.png" alt="Котик-слайдер">
+            </picture>
           </div>
         </div>
       </div>
+
+      </div>
+
     </section>
   </main>
-  <footer class="container">
-    <div class="page-footer footer__wrapper">
-      <div class="page-footer__contacts contacts contacts__info">
-        <div class="contacts__wrapper contacts-background contacts__partnership">
-          <p class="contacts__title title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__text text contacts__text--address ">
-            <span>ул. Большая</span>
-            <span>Конюшенная, д. 19/8</span>
-            <span> Санкт-Петербург</span>
-          </p>
-        </div>
-        <div class="contacts__map">
-          <legend class="visually-hidden">Интерактивная карта</legend>
-          <!--тут будет много кода карты и айфрейм и указатель и всё красиво-->
+  <footer class="page-footer">
+    <div class="page-footer__contacts contacts">
+      <div class="contacts__partnership container">
+        <div class="contacts__wrapper">
+          <p class="contacts__info contacts__info--title title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__info contacts__info--address text"><span>ул. Большая Конюшенная, д. 19/8
+            </span><span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="page-footer__links">
-        <a href="#" class="page-footer__logo">
-            <img class="page-footer__logo-image" src="img/logo/footer-logo.svg" alt="Логотип Cat energy">
-        </a>
+      <div class="contacts__map map" id="map"><span class="visually-hidden">Cat Energy на карте</span><iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876791631!2d30.320467112813738!3d59.93871647481054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682634386696!5m2!1sru!2sru"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта."></iframe>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.svg"><img class="map__image"
+            src="img/map-mobile.svg" width="320" height="362" alt="Местонахождение на карте.">
+        </picture>
+      </div>
+    </div>
+    <div class="page-footer__bottom">
+      <div class="page-footer__wrapper container"><a class="page-footer__logo logo" href="/"><img
+            src="img/logo/footer-logo.svg"><span class="visually-hidden">Cat Energy</span></a>
         <ul class="page-footer__social social list">
-          <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/logo/vkontakte.svg"><span class="visually-hidden">Вконтакте</span></a>
-          </li>
-          <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/logo/youtube.svg"><span class="visually-hidden">YT</span></a>
-          </li>
-          <li class="social__item"><a class="social__link social__link--vk" href="#">
-              <img class="social__icon" src="img/logo/telegram.svg"><span class="visually-hidden">TG</span></a>
-          </li>
-        </ul>
+          <li class="social__item"><a class="social__link social__link--vkontakte" href="#"><svg class="social__icon"
+                width="28" height="22" viewBox="0 0 28 22">
+                <img src="img/logo/vkontakte.svg">
+              </svg> <span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#"><svg class="social__icon"
+                width="28" height="22" viewBox="0 0 28 22">
+                <img src="img/logo/youtube.svg">
+              </svg> <span class="visually-hidden">Youtube</span></a></li>
+          <li class="social__item"><a class="social__link social__link--telegram" href="#"><svg class="social__icon"
+                width="28" height="22" viewBox="0 0 28 22">
+                <img src="img/logo/telegram.svg">
+              </svg> <span class="visually-hidden">Telegram</span></a></li>
+        </ul><a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive"><span
+            class="academy__caption">HTML Academy</span> <svg class="academy__logo" width="27" height="34"
+            viewBox="0 0 27 34">
+            <img src="img/logo/html_logo.svg">
+          </svg></a>
       </div>
-      <a class="page-footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="academy__text academy__caption ">HTML Academy</p>
-        <img src="img/logo/html_logo.svg" class="academy__logo"></a>
     </div>
   </footer>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
