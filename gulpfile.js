@@ -8,7 +8,7 @@ import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import {deleteAsync} from 'del';
+import del from 'del';
 import browser from 'browser-sync';
 
 // Styles
@@ -99,7 +99,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-  return deleteAsync('build');
+  return del('build');
 };
 
 // Server
