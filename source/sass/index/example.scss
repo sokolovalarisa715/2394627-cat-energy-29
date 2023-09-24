@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .example__wrapper {
     flex-direction: row;
     gap: 224px;
@@ -16,13 +16,13 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .example__numbers {
     margin-bottom: 99px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .example__numbers {
     margin-bottom: 0;
   }
@@ -32,13 +32,13 @@
   margin: 0 0 43px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .example__title {
     margin-bottom: 63px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .example__title {
     margin-bottom: 148px;
   }
@@ -49,19 +49,19 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .example__text {
     margin-bottom: 54px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .example__text {
     margin-bottom: 66px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .numbers {
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .numbers {
     flex-direction: column;
     align-items: flex-start;
@@ -84,14 +84,14 @@
   margin: 0 0 32px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .numbers__list {
     margin-bottom: 0;
     gap: 43px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .numbers__list {
     margin-bottom: 60px;
     gap: 42px;
@@ -126,7 +126,7 @@
   right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .numbers__item {
     min-width: 120px;
     padding-top: 15px;
@@ -143,7 +143,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .numbers__item {
     box-sizing: border-box;
     min-width: 163px;
@@ -159,7 +159,7 @@
   margin-bottom: 9px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .numbers__number {
     font-size: 30px;
     line-height: 37px;
@@ -177,7 +177,7 @@
   max-width: 70px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .numbers__text {
     font-size: 14px;
     max-width: 125px;
@@ -198,7 +198,7 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .numbers__legend {
     font-size: 20px;
     flex-direction: column;
@@ -207,7 +207,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .numbers__legend {
     flex-direction: row;
     gap: 63px;

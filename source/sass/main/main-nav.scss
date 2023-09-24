@@ -26,7 +26,7 @@
   transform: translateY(0);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .navigation__wrapper {
     transform: translateY(0);
     position: static;
@@ -38,7 +38,7 @@
   background-color: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .navigation__list {
     display: flex;
     gap: 36px;
@@ -50,7 +50,7 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .navigation__item {
     border-bottom: none;
   }
@@ -86,7 +86,7 @@
   pointer-events: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .navigation__link {
     font-size: 18px;
     padding-top: 20px;
@@ -99,7 +99,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .navigation__link {
     font-size: 20px;
     line-height: 30px;
@@ -133,7 +133,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .navigation__button {
     display: none;
   }

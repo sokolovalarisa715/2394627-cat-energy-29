@@ -4,13 +4,13 @@
   padding-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .programs {
     padding-bottom: 48px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .programs {
     padding-bottom: 73px;
   }
@@ -23,13 +23,13 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .programs__list {
     gap: 30px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .programs__list {
     flex-direction: row;
     gap: 80px;
@@ -41,14 +41,14 @@
   padding: 29px 19px 22px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .programs__item {
     padding: 77px 62px 59px 53px;
     max-width: 594px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .programs__item {
     padding: 41px 61px 62px 52px;
   }
@@ -65,13 +65,13 @@
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .program__title {
     padding-bottom: 22px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .program__title {
     padding-bottom: 73px;
     padding-top: 35px;
@@ -96,7 +96,7 @@
   top: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .program__icon--slim {
     width: 140px;
     height: 194px;
@@ -114,7 +114,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .program__icon--slim {
     width: 70px;
     height: 97px;
@@ -148,7 +148,7 @@
   top: -6px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .program__title-wrapper {
     padding-left: 0;
   }
@@ -162,7 +162,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .program__title-wrapper {
     padding-left: 162px;
   }
@@ -181,7 +181,7 @@
   border-bottom: 0.5px solid #d9d9d9;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .program__text {
     border-bottom: none;
     padding-bottom: 0;
@@ -190,7 +190,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .program__text {
     max-width: 457px;
   }
@@ -214,7 +214,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .program__link {
     margin-top: 57px;
     padding-right: 49px;
@@ -226,7 +226,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .program__link {
     margin-top: 31px;
   }

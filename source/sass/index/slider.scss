@@ -1,22 +1,83 @@
 @use "main/variables" as*;
 
 .example__slider {
-  min-width: 280px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  justify-content: center;
+  position: relative;
 
-  @media (min-width: 768px) {
-    min-width: 560px;
+  @media (min-width: $tabletWidth) {
+    grid-template-columns: repeat(2, 280px);
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $desktopWidth) {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    margin-top: 2px;
   }
 }
 
-.slider-wrapper {
-  width: 280px;
-  height: 256px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
+.example__line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  top: 50%;
+  left: 49.3%;
+  transform: translate(0, -50%);
+  background-color: #666666;
+  cursor: pointer;
+  z-index: 1;
 
-  @media (min-width: 768px) {
-    width: 560px;
+  @media (min-width: $tabletWidth) {
+    left: 49.9%;
+  }
+}
+
+.example__line:hover {
+  background-color: #68b738;
+}
+
+.example__line:active {
+  opacity: 0.6;
+}
+
+.example__thumb {
+  position: absolute;
+  background-image: url("../../img/slider/thumb.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+//.example__thumb {
+//  background-image: url("../../img/slider/thumb.svg");
+//}
+
+.example__image {
+  display: block;
+  object-fit: cover;
+  width: 140px;
+  height: 256px;
+
+  @media (min-width: $tabletWidth) {
+    width: 280px;
     height: 512px;
   }
+}
+
+.example__image--left {
+  object-position: left;
+}
+
+.example__image--right {
+  object-position: right;
 }
