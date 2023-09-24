@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="img/logo/icon-16.svg" type="image/svg+xml">
   <link rel="icon" href="img/logo/icon-32.svg" type="image/svg+xml">
   <link rel="icon" href="img/logo/icon-152.svg" type="image/svg+xml">
@@ -19,7 +22,7 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo/logo-dsk.svg">
         <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-        <img class="logo__image" src="img/logo/logo-mobile.svg" width="238" height="47" alt="Логотип Cat Energy.">
+        <img class="main-header__logo-image" src="img/logo/logo-mobile.svg" width="238" height="47" alt="Логотип Cat Energy.">
       </picture>
     </a>
     <nav class="main-header__navigation navigation">
@@ -34,7 +37,7 @@
             class="visually-hidden">Открыть меню</span></span></button>
     </nav>
   </header>
-  <main class="main-form__container">
+  <main>
     <form class="form" action="#" method="post" target="_blank">
       <div class="form__introduction form__container">
         <h1 class="form__title title title--h1">Подбор программы</h1>
@@ -77,7 +80,7 @@
         <ul class="form__field-list form__field-list--contacts form__container">
           <li class="form__field form__field--email"><label class="form__label form__label--default"
               for="email">E-mail:*</label> <input class="form__control form__control--email" type="email" name="email"
-              placeholder="kuklachev@gmail.com" id="email" required=""> <img class="form__field-icon" width="18"></li>
+              placeholder="kuklachev@gmail.com" id="email" required=""> <img class="form__field-icon" src="img/logo/email-stroke-1.png"alt="Иконка почты" width="18"></li>
           <li class="form__field form__field--phone"><label class="form__label form__label--default"
               for="phone">Телефон:*</label> <input class="form__control form__control--phone" type="tel" name="phone"
               placeholder="8 (960) 900-60-90" id="phone" required=""> <img class="form__field-icon" width="16"
@@ -126,16 +129,11 @@
             </span><span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <div class="contacts__map map" id="map"><span class="visually-hidden">Cat Energy на карте</span><iframe
-          class="map__iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876791631!2d30.320467112813738!3d59.93871647481054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682634386696!5m2!1sru!2sru"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта."></iframe>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.svg"><img class="map__image" src="img/map-mobile.svg"
-            width="320" height="362" alt="Местонахождение на карте.">
-        </picture>
+      <div class="contacts__map"><span class="visually-hidden">Cat Energy на карте</span>
+        <iframe class="contacts__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.2601022348094!2d30.320726991539182!3d59.94058611542112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694432310479!5m2!1sru!2sru"
+          width="100%" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
     <div class="page-footer__bottom">

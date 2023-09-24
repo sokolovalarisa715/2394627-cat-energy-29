@@ -89,6 +89,7 @@ const copy = (done) => {
   'source/*.ico',
   'source/*.webmanifest',
   'source/img/favicons/*.*',
+  'source/img/*/*.svg',
   ], {
   base: 'source'
   })

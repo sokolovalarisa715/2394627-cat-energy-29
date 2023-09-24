@@ -29,27 +29,27 @@ a {
   padding-right: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .container {
     max-width: 708px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .container {
     max-width: 1220px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .container {
     padding-left: 0;
     padding-right: 0;
@@ -62,7 +62,7 @@ a {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .image {
     width: 100%;
   }

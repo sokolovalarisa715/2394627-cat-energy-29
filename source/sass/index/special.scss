@@ -4,7 +4,7 @@
   padding-bottom: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .special {
     padding-bottom: 103px;
   }
@@ -19,7 +19,7 @@
   counter-reset: items 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .special__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .special__list {
     gap: 94px;
   }
@@ -86,7 +86,7 @@
   height: 38px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .special__item {
     flex-basis: 246px;
     padding-left: 0;
@@ -107,7 +107,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .special__item {
     flex-basis: 230px;
   }
@@ -117,7 +117,7 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .special__description {
     position: relative;
     max-width: 244px;
@@ -138,7 +138,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .special__description {
     line-height: 24px;
   }
@@ -157,7 +157,7 @@
   margin: 0 0 40px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .special__title {
     margin-bottom: 72px;
   }
@@ -169,7 +169,7 @@
   padding-bottom: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .example {
     background: linear-gradient(to top, #eaeaea 458px, #ffffff 458px 100%);
     border-top: 1px solid #e6e6e6;
@@ -178,7 +178,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktopWidth) {
   .example {
     background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px 100%);
     border-top: none;

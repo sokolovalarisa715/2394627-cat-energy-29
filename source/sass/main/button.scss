@@ -57,7 +57,7 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tabletWidth) {
   .button {
     font-size: 20px;
   }
@@ -71,16 +71,16 @@
   font-size: 14px;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: $tabletWidth) {
     margin-top: 3px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tabletWidth) {
     max-width: 247px;
     font-size: 20px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktopWidth) {
     grid-row: 3/4;
   }
 }
@@ -90,13 +90,13 @@
   font-size: 16px;
   line-height: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tabletWidth) {
     max-width: 706px;
     margin-top: 23px;
     width: 100%;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktopWidth) {
     max-width: 244px;
     font-size: 16px;
     margin-top: 0;
