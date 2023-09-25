@@ -1,0 +1,19 @@
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__caption {
+  width: 128px;
+  height: 24px;
+}
+
+@media (min-width: $tabletWidth) {
+  .logo__caption {
+    width: 144px;
+    height: 26px;
+  }
+}

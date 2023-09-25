@@ -1,0 +1,153 @@
+@media (min-width: $tabletWidth) {
+  .numbers {
+    display: flex;
+    justify-content: space-between;
+    max-width: 708px;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .numbers {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.numbers__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin: 0 0 32px 0;
+}
+
+@media (min-width: $tabletWidth) {
+  .numbers__list {
+    margin-bottom: 0;
+    gap: 43px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .numbers__list {
+    margin-bottom: 60px;
+    gap: 42px;
+  }
+}
+
+.numbers__item {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-bottom: none;
+  text-align: center;
+  border-radius: 3px;
+  padding: 12px 20px;
+  flex-basis: 50%;
+}
+
+.numbers__item::before,
+.numbers__item::after {
+  position: absolute;
+  content: "";
+  background-color: #cdcdcd;
+  width: 19px;
+  height: 1px;
+  bottom: 0;
+}
+
+.numbers__item::before {
+  left: 0;
+}
+
+.numbers__item::after {
+  right: 0;
+}
+
+@media (min-width: $tabletWidth) {
+  .numbers__item {
+    min-width: 120px;
+    padding-top: 15px;
+  }
+
+  .numbers__item:first-child::before,
+  .numbers__item:first-child::after {
+    width: 24px;
+  }
+
+  .numbers__item:last-child::before,
+  .numbers__item:last-child::after {
+    width: 10px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .numbers__item {
+    box-sizing: border-box;
+    min-width: 163px;
+  }
+}
+
+.numbers__number {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tabletWidth) {
+  .numbers__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.numbers__text {
+  font-size: 12px;
+  line-height: 1;
+  position: absolute;
+  color: #444444;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  max-width: 70px;
+}
+
+@media (min-width: $tabletWidth) {
+  .numbers__text {
+    font-size: 14px;
+    max-width: 125px;
+    bottom: -4px;
+  }
+}
+
+.numbers__legend {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: $tabletWidth) {
+  .numbers__legend {
+    font-size: 20px;
+    flex-direction: column;
+    gap: 9px;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .numbers__legend {
+    flex-direction: row;
+    gap: 63px;
+    align-items: flex-start;
+  }
+}
