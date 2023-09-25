@@ -1,5 +1,3 @@
-@use "main/variables" as*;
-
 body {
   margin: 0;
   font-family: "Lato", "Arial", sans-serif;
@@ -22,53 +20,4 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: $tabletWidth) {
-  .container {
-    max-width: 708px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktopWidth) {
-  .container {
-    max-width: 1220px;
-  }
-}
-
-@media (min-width: $tabletWidth) {
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media (min-width: $desktopWidth) {
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.image {
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-@media (min-width: $tabletWidth) {
-  .image {
-    width: 100%;
-  }
-}
-
-.list {
-  list-style: none;
-  padding-left: 0;
 }

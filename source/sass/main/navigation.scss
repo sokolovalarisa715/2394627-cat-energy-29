@@ -1,5 +1,3 @@
-@use "main/variables" as *;
-
 .navigation {
   display: flex;
   justify-content: flex-end;
@@ -21,10 +19,6 @@
   top: 67px;
 }
 
-.main-header--nojs .navigation__wrapper {
-  position: static;
-  transform: translateY(0);
-}
 
 @media (min-width: $tabletWidth) {
   .navigation__wrapper {
@@ -56,12 +50,6 @@
   }
 }
 
-@media (max-width: 767px) {
-  .main-header--nojs .navigation__item:last-child {
-    border-bottom: none;
-  }
-}
-
 .navigation__link {
   font: 500 20px/1"Oswald", "Arial", sans-serif;
   color: #000000;
@@ -77,7 +65,6 @@
   opacity: 0.6;
 }
 
-.academy:active .academy__caption,
 .navigation__link:active {
   opacity: 0.3;
 }
@@ -107,16 +94,8 @@
     padding-bottom: 6px;
   }
 
-  .main-header--main .navigation__link {
-    color: #ffffff;
-  }
-
   .navigation__link--current {
     border-color: #68b738;
-  }
-
-  .main-header--main .navigation__link--current {
-    border-color: #ffffff;
   }
 }
 
@@ -127,10 +106,6 @@
   height: 16px;
   cursor: pointer;
   background-color: unset;
-}
-
-.main-header--nojs .navigation__button {
-  display: none;
 }
 
 @media (min-width: $tabletWidth) {

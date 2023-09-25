@@ -1,5 +1,3 @@
-@use "main/variables" as*;
-
 .example__wrapper {
   display: flex;
   flex-direction: column;
@@ -61,156 +59,108 @@
   }
 }
 
-@media (min-width: $tabletWidth) {
-  .numbers {
-    display: flex;
-    justify-content: space-between;
-    max-width: 708px;
-    align-items: center;
-  }
-}
-
-@media (min-width: $desktopWidth) {
-  .numbers {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-.numbers__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-  margin: 0 0 32px 0;
-}
-
-@media (min-width: $tabletWidth) {
-  .numbers__list {
-    margin-bottom: 0;
-    gap: 43px;
-  }
-}
-
-@media (min-width: $desktopWidth) {
-  .numbers__list {
-    margin-bottom: 60px;
-    gap: 42px;
-  }
-}
-
-.numbers__item {
-  position: relative;
-  border: 1px solid #cdcdcd;
-  border-bottom: none;
-  text-align: center;
-  border-radius: 3px;
-  padding: 12px 20px;
-  flex-basis: 50%;
-}
-
-.numbers__item::before,
-.numbers__item::after {
-  position: absolute;
-  content: "";
-  background-color: #cdcdcd;
-  width: 19px;
-  height: 1px;
-  bottom: 0;
-}
-
-.numbers__item::before {
-  left: 0;
-}
-
-.numbers__item::after {
-  right: 0;
-}
-
-@media (min-width: $tabletWidth) {
-  .numbers__item {
-    min-width: 120px;
-    padding-top: 15px;
-  }
-
-  .numbers__item:first-child::before,
-  .numbers__item:first-child::after {
-    width: 24px;
-  }
-
-  .numbers__item:last-child::before,
-  .numbers__item:last-child::after {
-    width: 10px;
-  }
-}
-
-@media (min-width: $desktopWidth) {
-  .numbers__item {
-    box-sizing: border-box;
-    min-width: 163px;
-  }
-}
-
-.numbers__number {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 1;
-  color: #000000;
-  text-transform: uppercase;
-  margin-bottom: 9px;
-}
-
-@media (min-width: $tabletWidth) {
-  .numbers__number {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.numbers__text {
-  font-size: 12px;
-  line-height: 1;
-  position: absolute;
-  color: #444444;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  max-width: 70px;
-}
-
-@media (min-width: $tabletWidth) {
-  .numbers__text {
-    font-size: 14px;
-    max-width: 125px;
-    bottom: -4px;
-  }
-}
-
-.numbers__legend {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  display: flex;
+.example__slider {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
   justify-content: center;
   position: relative;
+
+  @media (min-width: $tabletWidth) {
+    grid-template-columns: repeat(2, 280px);
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $desktopWidth) {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    margin-top: 2px;
+  }
+}
+
+.example__line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  top: 50%;
+  left: 49.3%;
+  transform: translate(0, -50%);
+  background-color: #666666;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (min-width: $tabletWidth) {
+    left: 49.9%;
+  }
+}
+
+.example__line:hover {
+  background-color: #68b738;
+}
+
+.example__line:active {
+  opacity: 0.6;
+}
+
+.example__thumb {
+  position: absolute;
+  background-image: url("../../img/slider/thumb.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+//.example__thumb {
+//  background-image: url("../../img/slider/thumb.svg");
+//}
+
+.example__image {
+  display: block;
+  object-fit: cover;
+  width: 140px;
+  height: 256px;
+
+  @media (min-width: $tabletWidth) {
+    width: 280px;
+    height: 512px;
+  }
+}
+
+.example__image--left {
+  object-position: left;
+}
+
+.example__image--right {
+  object-position: right;
+}
+
+.example {
+  background-color: #eaeaea;
+  padding-top: 26px;
+  padding-bottom: 40px;
 }
 
 @media (min-width: $tabletWidth) {
-  .numbers__legend {
-    font-size: 20px;
-    flex-direction: column;
-    gap: 9px;
-    align-items: flex-end;
+  .example {
+    background: linear-gradient(to top, #eaeaea 458px, #ffffff 458px 100%);
+    border-top: 1px solid #e6e6e6;
+    padding-top: 43px;
+    padding-bottom: 104px;
   }
 }
 
 @media (min-width: $desktopWidth) {
-  .numbers__legend {
-    flex-direction: row;
-    gap: 63px;
-    align-items: flex-start;
+  .example {
+    background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px 100%);
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 75px;
   }
 }

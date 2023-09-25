@@ -1,0 +1,11 @@
+.image {
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: $tabletWidth) {
+  .image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+.more__plus {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  position: relative;
+}
+
+.more__plus::before,
+.more__plus::after {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  margin: auto;
+  background-color: #d3d3d3;
+}
+
+.more__plus::before {
+  width: 100%;
+  height: 2px;
+}
+
+.more__plus::after {
+  width: 2px;
+  height: 100%;
+}
+
+@media (min-width: $tabletWidth) {
+  .more__plus {
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+  }
+}

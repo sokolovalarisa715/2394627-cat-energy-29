@@ -1,0 +1,27 @@
+.academy:active .academy__caption {
+  opacity: 0.3;
+}
+
+.academy:active .academy__logo {
+  opacity: 0.3;
+  color: #68b738;
+}
+
+.academy:hover .academy__logo,
+.academy:focus .academy__logo {
+  color: #68b738;
+}
+
+.academy__caption {
+  color: #444444;
+}
+
+@media (min-width: $tabletWidth) {
+  .academy__caption {
+    margin-right: 27px;
+  }
+}
+
+.academy__logo {
+  color: #666666;
+}
